@@ -4,3 +4,4 @@ Projects/python problems completed:
 - quiz
 - multiplication table
 - sum of n natural numbers
+- even/odd checker
