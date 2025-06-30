@@ -1,2 +1,4 @@
 # python-practice
-Practicing python.
+Projects/python problems completed:
+- factorial
+- quiz
