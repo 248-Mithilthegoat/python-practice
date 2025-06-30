@@ -5,3 +5,4 @@ Projects/python problems completed:
 - multiplication table
 - sum of n natural numbers
 - even/odd checker
+- simple calculator
