@@ -1,13 +1,15 @@
 def main():
-    # Collecting user input
     x = int(input("Enter a number: "))
+    get_input(x)
     sum_natural_numbers(x)
-
-# Loop that continuously adds down to 0
-def sum_natural_numbers(n):
+def get_input(n):
+    if n <= 0:
+        n =int(input("Enter a number greater than 0: "))
+    elif n > 0:
+        return n
+def sum_natural_numbers(a):
     sum = 0
-    for i in range(1, n+1):
-        # Changes the value of sum variable to the sum of the natural numbers
+    for i in range(1, a+1):
         sum += i
     print(sum)
 main()
