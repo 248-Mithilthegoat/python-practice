@@ -2,3 +2,4 @@
 Projects/python problems completed:
 - factorial
 - quiz
+- multiplication table
