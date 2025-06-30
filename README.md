@@ -1,2 +1,8 @@
 # python-practice
-Practicing python.
+Projects/python problems completed:
+- factorial
+- quiz
+- multiplication table
+- sum of n natural numbers
+- even/odd checker
+- simple calculator
