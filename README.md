@@ -6,3 +6,5 @@ Projects/python problems completed:
 - sum of n natural numbers
 - even/odd checker
 - simple calculator
+- prime/composite checker
+- temperature converter
