@@ -10,9 +10,8 @@ def check_prime(n):
     for i in range(2, n):
         if n % i == 0:
             print(n, "is composite")
-            break
-    else:
-        print(n, "is prime")
+            return
+    print(n, "is prime.")
 
 # The main program with all functions
 def main():
