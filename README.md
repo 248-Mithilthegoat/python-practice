@@ -8,3 +8,6 @@ Projects/python problems completed:
 - simple calculator
 - prime/composite checker
 - temperature converter
+- palindrome checker
+- string reverser
+- vowel counter
