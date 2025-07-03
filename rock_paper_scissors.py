@@ -39,11 +39,11 @@ def play_again():
 def main():
     game()
     play == True
-    play_again(play)
-    if not play_again:
+    play = play_again()
+    if not play:
         print("Goodbye!")
         pass
-    elif play_again:
+    elif play:
         print("Sure!")
         game()
 
