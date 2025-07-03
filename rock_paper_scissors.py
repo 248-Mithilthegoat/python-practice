@@ -38,8 +38,8 @@ def play_again():
 
 def main():
     game()
-    play_again == True
-    play_again()
+    play == True
+    play_again(play)
     if not play_again:
         print("Goodbye!")
         pass
