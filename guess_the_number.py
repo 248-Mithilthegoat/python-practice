@@ -1,6 +1,5 @@
 import random
 a = range(1, 101)
-choice = random.choice(a)
 def guess():
     num = int(input("Guess a number from 1-100: "))
     if num < choice:
@@ -21,16 +20,14 @@ def play_again():
           return True
     return False
 def main():
-    correct = False
-    play = False
-    play = play_again()
-    attempts = 0
-    while (not correct):
-        correct = guess()
-        attempts += 1
-    print(attempts, "attempts")
+    play = True
     while play:
-        correct = guess()
-        if play:
-            play = play_again()
+          correct = False
+          attempts = 0
+          choice = random.choice(a)
+          while not correct:
+                correct = guess()
+                
+                
+
 main()
