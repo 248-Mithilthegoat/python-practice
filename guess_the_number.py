@@ -1,7 +1,7 @@
-import random
-a = range(1, 101)
+import random # Importing the random.choice function
+a = range(1, 101) # Creating a variable with the range of 1-100
 def guess(choice):
-    num = int(input("Guess a number from 1-100: "))
+    num = int(input("Guess a number from 1-100: ")) # Using if and elif statements to tell the user if they need to guess higher or lower or if they got it right
     if num < choice:
             print("Higher")
             return False
@@ -11,7 +11,7 @@ def guess(choice):
     elif num == choice:
             print("You did it!")
             return True
-def play_again():
+def play_again(): # Defining a function to ask the user if they want to play again
     print("Do you want to play again?")
     print("1) Yes")
     print("2) No")
@@ -21,7 +21,7 @@ def play_again():
     return False
 def main():
     play = True
-    while play:
+    while play: # Using a while loop to repeatedly ask the user until they guess the right number and ask if they want to play again or not
         correct = False
         attempts = 0
         choice = random.choice(a)
