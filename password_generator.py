@@ -10,13 +10,13 @@ Approaches
 Create lists and use for loop to pick random options until you meet the character limit
 
 """
-import random
+import random # Importing the random function
 
-uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"] # Creating lists for the different categories required
 lowercase = ["a", "b", "c", "d", "e", "f", "h", "i", "j", "k", "l", "m", "n", "o", "q", "r", "s", "t", "u", "y", "z"]
 number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 special_character = ["!", "@", "#", "$", "%", "^", "&", "*"]
-password = random.choice(special_character) + random.choice(number) + random.choice(uppercase)
+password = random.choice(special_character) + random.choice(number) + random.choice(uppercase) # Making the computer pick randomly from the lists and add to the password
 length = int(input("Enter the length of the password: "))
 for _ in range(length - 3):
     password += random.choice(lowercase)

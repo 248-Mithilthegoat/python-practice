@@ -1,14 +1,14 @@
-def show_menu():
+def show_menu(): # Defining a function to show a menu to the user
     print("1) Rock")
     print("2) Paper")
     print("3) Scissors")
 def game():
-    show_menu()
+    show_menu() # Calling the show_menu() function to show the options to the user
     choice = int(input("Make your choice: "))
-    import random
+    import random # Importing the random function to get access to the function to make the computer pick randomly from options
     options = ["Rock", "Paper", "Scissors"]
     computer_choice = random.choice(options)
-    match computer_choice:
+    match computer_choice: # Using the match function to create a print statement for every possible case including invalid ones
         case "Rock":
             match choice:
                 case 1: 
@@ -40,7 +40,7 @@ def game():
                 case _:
                     print("That is not a valid input.")
 
-def play_again():
+def play_again(): # Defining a function to ask the user if they want to play again
     print("Do you want to play again?")
     print("1) Yes")
     print("2) No")
@@ -51,9 +51,9 @@ def play_again():
 
 def main():
     play = True
-    while play:
+    while play: # Creating a while loop so that if the user wants to play again then it will replay the game
         game()
         play = play_again()
-    print("Goodbye!")
+    print("Goodbye!") # Creating a print statement to say "Goodbye!" if the user states that they are done with the game
 
 main()
