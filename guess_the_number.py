@@ -11,7 +11,9 @@ def guess(choice):
     elif num == choice:
             print("You did it!")
             return True
+
 def play_again(): # Defining a function to ask the user if they want to play again
+
     print("Do you want to play again?")
     print("1) Yes")
     print("2) No")
